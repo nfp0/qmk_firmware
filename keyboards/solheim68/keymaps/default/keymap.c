@@ -71,18 +71,18 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         if (MOD_BIT(KC_LSFT) | MOD_BIT(KC_RSFT)) {
           unregister_code(KC_LSFT);
 		      unregister_code(KC_RSFT);
-          if (keycode = M_LBRC) {
+          if ((keycode = M_LBRC)) {
 					  register_code(RALT(KC_7));
           }
-          if (keycode = M_RBRC) {
+          if ((keycode = M_RBRC)) {
 					  register_code(RALT(KC_0));
           }
         }
         else {
-          if (keycode = M_LBRC) {
+          if ((keycode = M_LBRC)) {
 					  register_code(RALT(KC_8));
           }
-          if (keycode = M_RBRC) {
+          if ((keycode = M_RBRC)) {
 					  register_code(RALT(KC_9));
           }
         }
