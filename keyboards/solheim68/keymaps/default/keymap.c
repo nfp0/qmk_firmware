@@ -40,7 +40,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [1] = LAYOUT(
     A(KC_F4),KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_DEL,           KC_INS,  KC_MPRV, \
-    _______, _______, _______, KC_UP,   _______, _______, _______, _______, _______, _______, _______, M_LBRC,  M_RBRC,  _______,          KC_DEL,  KC_MNXT, \
+    _______, _______, _______, KC_UP,   _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,          KC_DEL,  KC_MNXT, \
     _______, _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______, KC_PSCR, KC_SLCK, KC_PAUS, _______, AT,      _______, _______,                            \
     _______, KC_GRV,  _______, _______, _______, _______, _______, _______, _______, _______, _______, S(KC_7), _______, _______,          KC_VOLU,          \
     _______, _______, _______,                            _______,                            _______, MENUWIN, _______,          KC_MUTE, KC_VOLD, KC_MPLY  \
@@ -62,35 +62,3 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, _______, _______,                            _______,                            _______, _______, _______,          _______, _______, _______  \
   ),
 };
-
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-  switch(keycode) {
-    case M_LBRC:
-    case M_RBRC:
-      if (record->event.pressed) {
-        if (MOD_BIT(KC_LSFT) | MOD_BIT(KC_RSFT)) {
-          unregister_code(KC_LSFT);
-		      unregister_code(KC_RSFT);
-          if ((keycode = M_LBRC)) {
-            SEND_STRING(SS_RALT("7"));
-          }
-          if ((keycode = M_RBRC)) {
-            SEND_STRING(SS_RALT("0"));
-          }
-        }
-        else {
-          if ((keycode = M_LBRC)) {
-            SEND_STRING(SS_RALT("8"));
-          }
-          if ((keycode = M_RBRC)) {
-            SEND_STRING(SS_RALT("9"));
-          }
-        }
-      }
-      return false;
-  }
-	return true;
-};
-
-
-
