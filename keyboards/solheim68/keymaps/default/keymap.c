@@ -21,13 +21,10 @@
 // entirely and just use numbers.
 
 #define ALT_F4 LALT(KC_F4)
-#define AT RALT(KC_2)
-#define EURO RALT(KC_E)
 #define LBRC RALT(KC_8)
 #define RBRC RALT(KC_9)
 #define LCBR RALT(KC_7)
 #define RCBR RALT(KC_0)
-#define NUMCAPS LT(2, KC_CAPS)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT(
