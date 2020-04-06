@@ -22,6 +22,7 @@
 
 #define ALT_F4 LALT(KC_F4)
 #define MO_DOT LALT_T(KC_PDOT)
+#define MO_APP RCTL_T(KC_APP)
 #define LBRC RALT(KC_8)
 #define RBRC RALT(KC_9)
 #define LCBR RALT(KC_7)
@@ -49,6 +50,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     TG(1),   KC_HOME, KC_UP,   KC_END,  KC_PGUP, XXXXXXX, XXXXXXX, KC_HOME, KC_UP,   KC_END,  KC_PGUP, XXXXXXX, XXXXXXX, XXXXXXX,          KC_DEL,  KC_VOLD, \
     _______, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, XXXXXXX, XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, XXXXXXX, XXXXXXX, KC_ENT,                             \
     _______, KC_GRV,  KC_PSCR, KC_SLCK, KC_PAUS, XXXXXXX, KC_CAPS, KC_INS,  XXXXXXX, XXXXXXX, XXXXXXX, S(KC_7), _______, XXXXXXX,          KC_MPLY,          \
-    _______, _______, _______,                            KC_APP,                             _______, _______, _______,          KC_MPRV, KC_MUTE, KC_MNXT  \
+    _______, _______, _______,                            TG(2),                              _______, _______, MO_APP,           KC_MPRV, KC_MUTE, KC_MNXT  \
   ),
 };
