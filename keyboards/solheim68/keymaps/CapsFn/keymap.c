@@ -47,9 +47,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [2] = LAYOUT(
     _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_DEL,           KC_INS,  KC_VOLU, \
-    TG(1),   KC_HOME, KC_UP,   KC_END,  KC_PGUP, XXXXXXX, XXXXXXX, KC_HOME, KC_UP,   KC_END,  KC_PGUP, XXXXXXX, XXXXXXX, XXXXXXX,          KC_DEL,  KC_VOLD, \
-    _______, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, XXXXXXX, XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, XXXXXXX, XXXXXXX, KC_ENT,                             \
-    _______, KC_GRV,  KC_PSCR, KC_SLCK, KC_PAUS, XXXXXXX, KC_CAPS, KC_INS,  XXXXXXX, XXXXXXX, XXXXXXX, S(KC_7), _______, XXXXXXX,          KC_MPLY,          \
+    TG(1),   KC_PGUP, KC_UP,   KC_PGDN, XXXXXXX, XXXXXXX, XXXXXXX, KC_PGUP, KC_UP,   KC_PGDN, KC_PSCR, KC_SLCK, KC_PAUS, XXXXXXX,          KC_DEL,  KC_VOLD, \
+    _______, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX, XXXXXXX, XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX, XXXXXXX, XXXXXXX, KC_ENT,                             \
+    _______, KC_GRV,  KC_HOME, KC_END,  XXXXXXX, XXXXXXX, KC_CAPS, KC_INS,  KC_HOME, KC_END,  XXXXXXX, S(KC_7), _______, XXXXXXX,          KC_MPLY,          \
     _______, _______, _______,                            TG(2),                              _______, _______, MO_APP,           KC_MPRV, KC_MUTE, KC_MNXT  \
   ),
 };
