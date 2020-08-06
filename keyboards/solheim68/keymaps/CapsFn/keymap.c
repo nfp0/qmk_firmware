@@ -50,6 +50,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     TG(1),   KC_PGUP, KC_UP,   KC_PGDN, XXXXXXX, XXXXXXX, XXXXXXX, KC_PGUP, KC_UP,   KC_PGDN, KC_PSCR, KC_SLCK, KC_PAUS, XXXXXXX,          KC_DEL,  KC_VOLD, \
     _______, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX, XXXXXXX, XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX, XXXXXXX, XXXXXXX, KC_ENT,                             \
     _______, KC_GRV,  KC_HOME, KC_END,  XXXXXXX, XXXXXXX, KC_CAPS, KC_INS,  KC_HOME, KC_END,  XXXXXXX, S(KC_7), _______, XXXXXXX,          KC_MPLY,          \
-    _______, _______, _______,                            TG(2),                              _______, _______, MO_APP,           KC_MPRV, KC_MUTE, KC_MNXT  \
+    _______, _______, _______,                            _______,                            _______, _______, MO_APP,           KC_MPRV, KC_MUTE, KC_MNXT  \
   ),
 };
